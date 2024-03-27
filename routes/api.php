@@ -11,3 +11,5 @@ Route::get('/user', function (Request $request) {
 
 Route::get('progress',[ProgressController::class, 'index']);
 Route::post('progress',[ProgressController::class, 'store']);
+Route::put('progress/edit/{id}',[ProgressController::class, 'edit']);
+Route::delete('progress/delete/{id}',[ProgressController::class, 'delete']);
